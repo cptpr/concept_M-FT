@@ -199,9 +199,13 @@ main {
     flex-direction: row;
   }
 
-  .nav-link {
+  .nav-link{
     justify-content: center;
-    width: 3.5rem;
+    align-items: center;
+  }
+  .nav-item {
+    font-size: 11;
+    width: 3rem;
   }
   .content{
     margin-left: 6%;
