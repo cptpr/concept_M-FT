@@ -227,6 +227,9 @@ main {
   }
   
 }
+
+/* Large screens */ 
+
 @media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
@@ -261,7 +264,7 @@ main {
     margin-left: 6%;
     margin-right: 4%;
   }
-}f2
+}
 
 
 /* Fullscreens */
@@ -292,7 +295,6 @@ main {
   }
 }
 
-/* Large screens */ 
 
 
 
