@@ -1,0 +1,97 @@
+
+.content-a{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 85%;
+    text-align: center;
+}
+.map-title{
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    top: 10rem;
+    font-size: 30;
+    font-family: 'Montserrat';
+}
+.map-wrapper{
+    display: inline-block;
+    position: absolute;
+    left: 15%;
+    top: 15rem;
+}
+
+.text-wrapper{
+    display: inline-block;
+    position: absolute;
+    background-color: unset;
+    top: 10rem;
+    height: 25rem;
+    width: 40%;
+}
+.tw-1{
+    font-size: 30;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    height: 5rem;
+    margin: 0 auto;
+}
+.tw-i{
+    text-align: left;
+    list-style-type: none;
+    font-size: 27;
+    font-family: 'Montserrat';
+    height: 5rem;
+    width:30rem;
+    display: inline-block;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    line-height: 3rem;
+}
+
+@media only screen and (max-width: 1508px) {
+    .map-wrapper, .text-wrapper{
+        width: 100%;
+        left:0;
+        right:0;
+    }
+    .text-wrapper{
+        width: 100%;
+        text-align: center;
+        top: 50rem;
+    }
+    .tw-wrapper{
+        width: 100%;
+        text-align: center;
+    }
+    body{
+        height: 91rem;
+    }
+    .tw-i{
+        width: 100%;
+        right: unset;
+        transform: translateX(-15rem);
+    }
+    .tw-1{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 462px) {
+    .tw-i{
+        font-size: 22;
+    transform: translateX(-12rem);
+
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .map-wrapper iframe{
+        width: 100%;
+    }
+}

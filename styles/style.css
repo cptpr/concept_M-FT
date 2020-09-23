@@ -6,7 +6,7 @@
     --bg-primary: #ffffff;
     --bg-secondary: #e7e7e7;
     --bg-nav: #e7e3e36b;
-    --bg-main: #272622;
+    --bg-main: #272721;
     --transition-speed: 600ms;
 }
 * {
@@ -22,7 +22,11 @@ body{
     padding: 0;
     background-color: var(--bg-primary);
 }
-
+body::after {
+    content: '';
+    display: block;
+    height: 10rem;
+}
 /******* HEADER *******/
 
 .header-main{
@@ -230,9 +234,9 @@ body{
 }
 .content-1-link:hover{
     background-color: var(--bg-main);
-    color: var(--bg-primary);
+    color: #f3d89f;
     border-color: var(--bg-secondary);
-    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.8);
+    box-shadow: 0px 0px 14px 0px rgba(58, 58, 58, 0.8);
     transition: var(--transition-speed);
 }
 .content-1-button{
@@ -267,9 +271,8 @@ body{
 }
 
 /******* FOOTER *******/
-
 .footer{
-    position: static;
+    position: absolute;
     bottom: 0;
     background: var(--bg-main);
      color: var(--bg-primary);
@@ -354,11 +357,6 @@ body{
     fill: var(--text-secondary);
 
 }
-
-/****** SLIDESHOW *********/
-
-
-
 /******* RESPONSIVE SELECTORS *******/
 
 /******* SMALL SCREENS *******/
