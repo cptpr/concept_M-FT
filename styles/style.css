@@ -14,9 +14,10 @@
   }
 html{
     overflow-x: hidden;
-    max-width: 100%;
 }
 body{
+    position: relative;
+    width: 100%;
     margin: 0;
     padding: 0;
     background-color: var(--bg-primary);
@@ -123,8 +124,6 @@ body{
     right: 0;
     width: 250px;
     margin-top: 2rem;
-    transform: translateX(+250px);
-    transition: transform 250ms ease-in-out;
     background: var(--bg-primary);
      transition: var(--transition-speed);
      box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
@@ -156,13 +155,11 @@ body{
     transition: var(--transition-speed);
 }
 .menu-icon-wrapper:hover + .slide-nav-wrapper {
-  transform: translateX(0);
   transition: var(--transition-speed);
   opacity: 100%;
 
 }
 .slide-nav-wrapper:hover{
-    transform: translateX(0);
   opacity: 100%;
 
 }
