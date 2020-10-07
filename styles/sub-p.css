@@ -1,30 +1,46 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .content-wrapper{
     position: relative;
     display: inline-block;
     width: 100%;
-    height: 45rem;
     padding-top: 12rem;
     text-align: center;
+    margin-bottom: 6rem;
 }
 .seg{
     display: inline-block;
     position: relative;
     top: 0;
-    width: 40%;
     padding: 0 1rem;
     font-family: 'Montserrat';
+    width: 100%;
 }
+
 .seg-item{
     display: inline-block;
-
     margin-bottom: 5rem;
-
+    width: 40%;
+}
+.seg-item:hover .seg-title{
+    scale: 1.04;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
 }
 .seg-title{
+    -webkit-transition: 800ms;
+    -o-transition: 800ms;
+    transition: 800ms;
     margin: 0 0 1rem 0 ;
-    width: 40%;
+    padding-left: 1rem ;
     font-size: 25;
-    white-space: nowrap;
+    width: 100%;
     border-left: 5px solid #056b13;
     text-align: left;
 }
@@ -32,35 +48,122 @@
     display: inline-block;
     text-align: left;
     margin: 0 auto;
+    width: 100%;
+
 
 }
-.seg-1{
-        transform: translateX(-5rem);
-    }
+.slideshow{
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.s-s{
+    display: inline-block;
+    white-space: nowrap;
+    width: 90%;
+}
+.img-container{
+    display: inline-block;
+    width: 20vw;
+    margin:  0.3vw;
+}
+.img-container img{
+    width: 100%;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
 
-@media only screen and (max-width: 858px ) {
-    .seg{
-        display: contents;
-        width: 100%;
+}
+.img-container img:hover{
+    scale:1.089;
+    -webkit-filter: drop-shadow(0px 0px 15px rgba(73, 73, 73, 0.61));
+            filter: drop-shadow(0px 0px 15px rgba(73, 73, 73, 0.61));
+    
+    -webkit-transition: 300ms;
+    
+    -o-transition: 300ms;
+    
+    transition: 300ms;
+}
+.lift-boy-logo img{
+    width: 15rem;
+    -webkit-transition: 800ms;
+    -o-transition: 800ms;
+    transition: 800ms;
+}
+.lift-boy-logo img:hover{
+    -webkit-filter: drop-shadow(0px 0px 15px rgb(212, 178, 25));
+            filter: drop-shadow(0px 0px 15px rgb(212, 178, 25));
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+
+}
+
+.lift-boy-caption{
+    margin: 2rem 0;
+    font-family: 'Montserrat';
+    font-size: 18;
+}
+.lift-boy-img img{
+    margin:1rem;
+}
+.lift-boy-img img{
+    width: 80%;
+    border: 1px solid black;
+}
+.list-1-title{
+    white-space: nowrap;
+    text-align: left;
+    font-size: 20;
+    font-weight: bold;
+}
+.lift-boy-list-wrapper-1, .lift-boy-list-wrapper-2{
+    text-align: left;
+    display: inline-block;
+    margin: 1rem auto;
+    width: 33%;
+}
+.lift-boy-list{
+    display: inline-block;
+    text-align: left;
+}
+
+
+
+@media only screen and (max-width: 1000px ) {
+   
+    .seg-item{
+        width: 80%;
     }
     .seg-caption{
-        width: 80%;
-        text-align: center;
         margin: 0 auto;
-    }
-    .content-wrapper{
-        height: 65rem;
     }
     .seg{
         text-align: center;
+        width: 100%;
 
     }
     
     .seg-title{
         margin: 0 auto;
-        transform: translateY(-1rem);
     }
-    .seg-1{
-        transform: translateX(-4rem);
+}
+@media only screen and (max-width: 763px ) {
+    .lift-boy-list-wrapper-1, .lift-boy-list-wrapper-2{
+        display: block;
+        width: 80%;
+    }
+    .s-s{
+        width: 100%;
+    }
+    .img-container{
+        width: 30vw;
+    }
+
+}
+
+@media only screen and (min-width: 1080px ) {
+    .lift-boy-img img{
+        width: 55rem;
     }
 }

@@ -1,9 +1,57 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .content-wrapper{
     display: inline-block;
     position: relative;
     width: 100%;
-    height: 100rem;
-    margin-top: 10rem;
+    margin: 8rem  0 8rem 0;
+}
+.video-wrapper{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    overflow:hidden;
+}
+.video-wrapper video{
+    display: inline-block;
+    width: 80%;
+    margin-top: -13vw;
+    margin-bottom: -5vw;
+}
+.caption{
+    width: 100%;
+    margin: 2rem auto ;
+    font-size: 18;
+}
+
+.t-list{
+    list-style-type: none;
+    width: 81%;
+    margin: 5rem auto 0 auto;
+
+}
+.t-list-item{
+    margin: 1rem 0;
+    padding-left:1vw ;
+    border-left: 5px solid #056b13;
+
+
+}
+.content-caption{
+    white-space: nowrap;
+    font-size: 60;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    margin-top: 6rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
 }
 .content-1{
     display: inline-block;
@@ -19,11 +67,16 @@
 .content-1-img img{
     display: inline-block;
     height: 20rem;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 .content-1-img img:hover{
-    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.692));
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.692));
+            filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.692));
     scale: 1.1;
+    -webkit-transition: 600ms;
+    -o-transition: 600ms;
     transition: 600ms;
 }
 .content-1-text{
@@ -32,10 +85,9 @@
     font-family: 'Montserrat';
     letter-spacing: -0.1rem;
     display: inline-block;
-    position: absolute;
+    position: relative;
     font-size: 26;
     height: 3rem;
-    top: 15rem;
     white-space: pre-wrap;
 }
 .content-2{
@@ -52,15 +104,14 @@
     font-family: 'Montserrat';
     letter-spacing: -0.1rem;
     display: inline-block;
-    position: absolute;
+    position: relative;
     font-size: 26;
     height: 3rem;
-    top: 50rem;
     white-space: pre-wrap;
 }
 .content-3{
     display: inline-block;
-    margin: 0 auto;
+    margin: 0 auto 5rem auto;
     text-align: center;
     width: 90%;
     height: 30rem;
@@ -71,36 +122,50 @@
     font-family: 'Montserrat';
     letter-spacing: -0.1rem;
     display: inline-block;
-    position: absolute;
+    position: relative;
     font-size: 26;
     height: 3rem;
-    top: 80rem;
     white-space: pre-wrap;
     
 }
+
+
 @media only screen and (max-width: 645px) {
     .content-1-text, .content-2-text, .content-3-text{
         display: block;
         width: 100%;
-        transform: translateY(-10rem);
         white-space: nowrap;
         font-size: 24;
+        margin-top: 2rem;
     }
-    .content-2-text{
-        transform: translateY(26rem);
-        top: 14rem;
-
-    }
-    .content-1-img{ 
-        margin-top: 14rem;
-    }
+  
 }
 
-@media only screen and (max-width: 367px) {
+@media only screen and (max-width: 381px) {
     .content-1-text, .content-2-text{
         font-size: 20;
     }
     .content-1-img img{
-        height: 15rem;;
+        height: 15rem;
+    }
+    .content-caption{
+        font-size: 40;
+    }
+    .content-1, .content-2, .content-3{
+        height: 20rem;
+    }
+}
+@media only screen and (min-width: 960px) {
+    .video-wrapper{
+        height: 12rem;
+    }
+
+    .video-wrapper video{
+        margin-top: -23vw;
+    }
+}
+@media only screen and (min-width: 2200px) {
+    .video-wrapper video{
+        margin-top: -26vw;
     }
 }

@@ -1,36 +1,46 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 .content-a{
     position: relative;
     display: inline-block;
     width: 100%;
-    height: 85%;
     text-align: center;
+    margin : 2rem auto ;
+    height:75% ;
 }
 .map-title{
-    display: inline-block;
-    position: absolute;
-    left: 10%;
-    top: 10rem;
+    position: relative;
+    display: block;
     font-size: 30;
+    top: -2rem;
     font-family: 'Montserrat';
 }
 .map-wrapper{
     display: inline-block;
     position: absolute;
+    top: 10rem;
     left: 15%;
-    top: 15rem;
+    width: 40%;
 }
 
 .text-wrapper{
     display: inline-block;
-    position: absolute;
+    position: relative;
     background-color: unset;
-    top: 10rem;
+    text-align: center;
     height: 25rem;
-    width: 40%;
+    width: 30%;
+    top: 10rem;
+    left: 20%
 }
 .tw-1{
-    font-size: 30;
+    font-size: 34;
     font-weight: bold;
     font-family: 'Montserrat';
     display: inline-block;
@@ -40,6 +50,7 @@
     margin: 0 auto;
 }
 .tw-i{
+    white-space: nowrap;
     text-align: left;
     list-style-type: none;
     font-size: 27;
@@ -52,29 +63,35 @@
     right: 5rem;
     line-height: 3rem;
 }
+.tw-i a{
+    color: black;
 
-@media only screen and (max-width: 1508px) {
+}
+
+@media only screen and (max-width: 1645px) {
     .map-wrapper, .text-wrapper{
         width: 100%;
         left:0;
         right:0;
     }
-    .text-wrapper{
-        width: 100%;
-        text-align: center;
-        top: 50rem;
-    }
     .tw-wrapper{
         width: 100%;
         text-align: center;
     }
-    body{
-        height: 91rem;
+    .content-a{
+        height: 70rem;
+    }
+    
+    .map-wrapper{
+        top: 40rem;
+
     }
     .tw-i{
         width: 100%;
         right: unset;
-        transform: translateX(-15rem);
+        -webkit-transform: translateX(-15rem);
+            -ms-transform: translateX(-15rem);
+                transform: translateX(-15rem);
     }
     .tw-1{
         width: 100%;
@@ -85,7 +102,9 @@
 @media only screen and (max-width: 462px) {
     .tw-i{
         font-size: 22;
-    transform: translateX(-12rem);
+    -webkit-transform: translateX(-12rem);
+        -ms-transform: translateX(-12rem);
+            transform: translateX(-12rem);
 
     }
 
