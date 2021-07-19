@@ -184,4 +184,9 @@ display: block;
     }
 }
 
-
+@media only screen and (max-width:579px) {
+.content-1-quote{
+    font-size: 6vw;
+    letter-spacing: 0.25rem;
+}
+}
