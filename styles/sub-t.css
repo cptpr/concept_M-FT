@@ -37,6 +37,7 @@
 .caption{
     width: 100%;
     margin-top: 15rem;
+    padding-right:1.5rem;
     font-size: 18px;
 }
 .t-list{
@@ -150,7 +151,7 @@
         display: block;
         width: 100%;
         white-space: nowrap;
-        font-size: 24;
+        font-size: 24px;
         margin-top: 2rem;
     }
     .content-caption {
@@ -158,8 +159,8 @@
     }
     .video-wrapper video{
         width: unset;
-        margin-left: -50rem;
-        margin-top: -15rem;
+        margin-left: -30rem;
+        margin-top:0;
     }
 }
 @media only screen and (max-width: 381px) {
