@@ -37,12 +37,13 @@
 .caption{
     width: 100%;
     margin-top: 15rem;
-    padding-right:1.5rem;
+    padding-right:4.5rem;
     font-size: 18px;
 }
 .t-list{
     list-style-type: none;
-    width: 95%;
+    width:100%;
+    margin-top: 20rem;
 
 }
 .t-list-item{
@@ -59,7 +60,7 @@
     font-weight: bold;
     font-family: 'Montserrat';
     margin-top: 6rem;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
@@ -164,15 +165,19 @@
     }
 }
 @media only screen and (max-width: 381px) {
-    .content-1-text, .content-2-text{
+    .content-1-text, .content-2-text {
         font-size: 20;
     }
-    .content-1-img img{
+
+    .content-1-img img {
         height: 15rem;
     }
-    .content-1, .content-2, .content-3{
+
+    .content-1, .content-2, .content-3 {
         height: 20rem;
     }
+
+
 }
 @media only screen and (min-width: 1613px) {
 
@@ -182,16 +187,23 @@
     }
 }
 @media only screen and (max-width: 381px) {
-
+    .caption{
+        margin-top: 30%;
+    }
 }
 @media only screen and (min-width: 2500px) {
     .caption{
         margin-top: 5%;
     }
 }
-@media only screen and (max-width: 525px) {
-    .caption{
-        margin-top: 30%;
-    }
+@media only screen and (max-width: 560px) {
 
+    .t-list{
+        padding-left: 0.7rem;
+        margin-top: 2rem;
+
+    }
+    .content-caption {
+        font-size: 6vw;
+    }
 }
