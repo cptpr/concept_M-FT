@@ -4,47 +4,57 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+.header-main {
 
+
+}
 .content-wrapper{
     display: inline-block;
     position: relative;
-    width: 100%;
-    margin: 8rem  0 8rem 0;
+    margin:10%  0 8rem 0;
+
+
 }
 .video-wrapper{
-    display: inline-block;
-    text-align: center;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
+    position: absolute;
+    align-content: center;
+    height:40rem;            filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.692));
+
+
+
 }
 .video-wrapper video{
-    display: inline-block;
-    width: 80%;
-    margin-top: -13vw;
-    margin-bottom: -5vw;
-}
-.caption{
     width: 100%;
-    margin: 2rem auto ;
-    font-size: 18;
+
+    opacity: 0.7;
+    filter: brightness(0.4);
+    z-index: 1;
+
 }
 
+.caption{
+    width: 100%;
+    margin-top: 15rem;
+    font-size: 18px;
+}
 .t-list{
     list-style-type: none;
-    width: 81%;
-    margin: 5rem auto 0 auto;
+    width: 95%;
 
 }
 .t-list-item{
     margin: 1rem 0;
     padding-left:1vw ;
-    border-left: 5px solid #056b13;
+    color: var(--text-primary);
+    border-left: 5px solid var(--text-secondary);
 
 
 }
 .content-caption{
     white-space: nowrap;
-    font-size: 60;
+    font-size: 60px;
     font-weight: bold;
     font-family: 'Montserrat';
     margin-top: 6rem;
@@ -52,7 +62,12 @@
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
+    color: var(--text-secondary);
 }
+.content{
+    color: var(--text-secondary);
+}
+
 .content-1{
     display: inline-block;
     margin: 0 auto;
@@ -130,7 +145,7 @@
 }
 
 
-@media only screen and (max-width: 645px) {
+@media only screen and (max-width: 989px) {
     .content-1-text, .content-2-text, .content-3-text{
         display: block;
         width: 100%;
@@ -138,9 +153,15 @@
         font-size: 24;
         margin-top: 2rem;
     }
-  
+    .content-caption {
+        font-size: 8vw;
+    }
+    .video-wrapper video{
+        width: unset;
+        margin-left: -50rem;
+        margin-top: -15rem;
+    }
 }
-
 @media only screen and (max-width: 381px) {
     .content-1-text, .content-2-text{
         font-size: 20;
@@ -148,24 +169,28 @@
     .content-1-img img{
         height: 15rem;
     }
-    .content-caption{
-        font-size: 40;
-    }
     .content-1, .content-2, .content-3{
         height: 20rem;
     }
 }
-@media only screen and (min-width: 960px) {
-    .video-wrapper{
-        height: 12rem;
-    }
+@media only screen and (min-width: 1613px) {
 
     .video-wrapper video{
-        margin-top: -23vw;
+
+        margin-top: -20%;
     }
 }
-@media only screen and (min-width: 2200px) {
-    .video-wrapper video{
-        margin-top: -26vw;
+@media only screen and (max-width: 381px) {
+
+}
+@media only screen and (min-width: 2500px) {
+    .caption{
+        margin-top: 5%;
     }
+}
+@media only screen and (max-width: 525px) {
+    .caption{
+        margin-top: 30%;
+    }
+
 }

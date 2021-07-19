@@ -20,6 +20,7 @@
     padding: 0 1rem;
     font-family: 'Montserrat';
     width: 100%;
+    color: var(--text-primary);
 }
 
 .seg-item{
@@ -41,7 +42,7 @@
     padding-left: 1rem ;
     font-size: 25;
     width: 100%;
-    border-left: 5px solid #056b13;
+    border-left: 5px solid var(--text-secondary);
     text-align: left;
 }
 .seg-caption{
@@ -55,6 +56,7 @@
 .slideshow{
     width: 100%;
     margin-bottom: 4rem;
+
 }
 .s-s{
     display: inline-block;
@@ -74,85 +76,47 @@
 
 }
 .img-container img:hover{
-    scale:1.089;
+    scale:1.0089;
     -webkit-filter: drop-shadow(0px 0px 15px rgba(73, 73, 73, 0.61));
             filter: drop-shadow(0px 0px 15px rgba(73, 73, 73, 0.61));
-    
-    -webkit-transition: 300ms;
-    
-    -o-transition: 300ms;
-    
-    transition: 300ms;
-}
-.lift-boy-logo img{
-    width: 15rem;
-    -webkit-transition: 800ms;
-    -o-transition: 800ms;
-    transition: 800ms;
-}
-.lift-boy-logo img:hover{
-    -webkit-filter: drop-shadow(0px 0px 15px rgb(212, 178, 25));
-            filter: drop-shadow(0px 0px 15px rgb(212, 178, 25));
     -webkit-transition: 300ms;
     -o-transition: 300ms;
     transition: 300ms;
 
 }
 
-.lift-boy-caption{
-    margin: 2rem 0;
-    font-family: 'Montserrat';
-    font-size: 18;
-}
-.lift-boy-img img{
-    margin:1rem;
-}
-.lift-boy-img img{
-    width: 80%;
-    border: 1px solid black;
-}
 .list-1-title{
     white-space: nowrap;
     text-align: left;
-    font-size: 20;
+    font-size: 20px;
     font-weight: bold;
 }
-.lift-boy-list-wrapper-1, .lift-boy-list-wrapper-2{
-    text-align: left;
-    display: inline-block;
-    margin: 1rem auto;
-    width: 33%;
-}
-.lift-boy-list{
-    display: inline-block;
-    text-align: left;
-}
-
-
 
 @media only screen and (max-width: 1000px ) {
    
     .seg-item{
-        width: 80%;
+        width: 90%;
+        height: 2rem;
+        margin: 3rem 0;
     }
     .seg-caption{
         margin: 0 auto;
+
     }
     .seg{
         text-align: center;
         width: 100%;
-
     }
     
     .seg-title{
         margin: 0 auto;
     }
+    .seg-3{
+        margin-top: 3rem ;
+    }
 }
 @media only screen and (max-width: 763px ) {
-    .lift-boy-list-wrapper-1, .lift-boy-list-wrapper-2{
-        display: block;
-        width: 80%;
-    }
+
     .s-s{
         width: 100%;
     }
